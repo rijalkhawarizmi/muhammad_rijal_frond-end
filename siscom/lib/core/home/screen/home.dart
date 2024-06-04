@@ -210,11 +210,12 @@ class Home extends StatelessWidget {
                                                 child: CustomButton(
                                                   color: Colors.indigo.shade900,
                                                   onPressed: () {
+                                                    Get.back();
                                                     Get.to(
                                                         () => AddUpdateGoods(),
                                                         arguments: controller
                                                             .goodsList.first);
-                                                    Get.back();
+                                                    
                                                   },
                                                   text: "Edit Barang",
                                                 ),
